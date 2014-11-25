@@ -1,5 +1,8 @@
-FROM sameersbn/ubuntu:14.04.20141026
-MAINTAINER sameer@damagehead.com
+# Credits to sameer@damagehead.com
+# This fork makes it work on the docker ubuntu image.
+
+FROM ubuntu:latest
+MAINTAINER Jasper Swaagman jasperswaagman@gmail.com
 
 RUN apt-get update \
  && apt-get install -y redis-server \
